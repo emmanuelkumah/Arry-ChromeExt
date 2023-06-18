@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "LearnJS",
+  "description": "Learn JS on new tab",
+  "version": "1.0",
+  "icons": {
+    "48": "icons/48.png",
+    "64": "icons/64.png"
+  },
+  "action": {
+    "default_icon": "icons/64.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
