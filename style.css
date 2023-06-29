@@ -3,36 +3,25 @@
   margin: 0;
   border: 0;
   color: #fff;
+  font-family: "Poppins", sans-serif;
 }
-
-.heading_container {
+#arr_container {
   display: grid;
   place-items: center;
-  color: #fff;
+  margin-top: 5%;
 }
-.main_heading,
-.sub_heading {
-  padding-top: 5%;
-}
-.main_heading {
-  font-size: 1.5rem;
-}
-.sub_heading {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  padding: 2rem 6rem;
-}
-.arrDetails_Container {
-  display: grid;
-  place-items: center;
-}
-.arrMethod,
-.arrDesc,
-.arrEgs,
 .arrUseCase {
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.arrMethod {
   font-size: 1.3rem;
-  text-align: center;
+  padding-bottom: 2rem;
 }
 .arrDesc {
-  padding-top: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 3rem§;
 }
