@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   border: 0;
+  color: #fff;
 }
 
 .heading_container {
@@ -20,4 +21,12 @@
   font-size: 1.2rem;
   line-height: 1.5;
   padding: 2rem 6rem;
+}
+.arrTopic,
+.arrDesc {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.arrDesc {
+  padding-top: 2rem;
 }
