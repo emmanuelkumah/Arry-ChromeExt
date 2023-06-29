@@ -1,4 +1,23 @@
-html,
-body {
-  background-color: antiquewhite;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.heading_container {
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+.main_heading,
+.sub_heading {
+  padding-top: 5%;
+}
+.main_heading {
+  font-size: 1.5rem;
+}
+.sub_heading {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 2rem 6rem;
 }
