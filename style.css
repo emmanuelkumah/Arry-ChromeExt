@@ -22,8 +22,14 @@
   line-height: 1.5;
   padding: 2rem 6rem;
 }
-.arrTopic,
-.arrDesc {
+.arrDetails_Container {
+  display: grid;
+  place-items: center;
+}
+.arrMethod,
+.arrDesc,
+.arrEgs,
+.arrUseCase {
   font-size: 1.3rem;
   text-align: center;
 }

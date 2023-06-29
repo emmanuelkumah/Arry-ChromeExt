@@ -13,8 +13,16 @@ const bgColors = [
 //array Methods
 const arrayMethods = [
   {
-    method: "Array.prototype.concat()",
-    description: `The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+    method: "Array.concat()",
+    usecase: "Join Two Arrays Together",
+    description: `The concat() method is used to join two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+    `,
+    illustration: `
+    <iframe
+    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=17px&lh=133%25&si=false&es=2x&wm=false&code=let%2520fruits%2520%253D%2520%255B%27%25F0%259F%258D%258C%27%252C%2520%27%25F0%259F%258D%2589%27%252C%27%25F0%259F%258D%2593%27%255D%253B%250Alet%2520pasteries%2520%253D%2520%255B%27%25F0%259F%258D%259E%27%252C%2520%27%25F0%259F%258D%2595%27%255D%253B%250A%250Alet%2520allMeals%2520%253D%2520fruits.concat%28pasteries%29%253B%250A%250Aconsole.log%28allMeals%29%250A%250A%252F%252F%2520%255B%27%25F0%259F%258D%258C%27%252C%2520%27%25F0%259F%258D%2589%27%252C%27%25F0%259F%258D%2593%27%252C%27%25F0%259F%258D%259E%27%252C%2520%27%25F0%259F%258D%2595%27%255D"
+    style="width: 560px; height: 378px; border:0; transform: scale(1); overflow:hidden;"
+    sandbox="allow-scripts allow-same-origin">
+  </iframe>
     `,
   },
   {
@@ -58,10 +66,15 @@ generateRandomBackgroundColor();
 const displayArrMethods = () => {
   const randNum = Math.floor(Math.random() * 5 + 1);
 
-  const heading = document.querySelector(".arrTopic");
+  const method = document.querySelector(".arrMethod");
   const desc = document.querySelector(".arrDesc");
-  heading.textContent = arrayMethods[randNum].method;
-  desc.textContent = arrayMethods[randNum].description;
+  const useCase = document.querySelector(".arrUseCase");
+  const egs = document.querySelector(".arrEgs");
+
+  method.textContent = arrayMethods[0].method;
+  desc.textContent = arrayMethods[0].description;
+  useCase.textContent = arrayMethods[0].usecase;
+  egs.innerHTML = arrayMethods[0].illustration;
 };
 
 displayArrMethods();

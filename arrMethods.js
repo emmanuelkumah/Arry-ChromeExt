@@ -1,7 +1,15 @@
- const arrayMethods = [
+const arrayMethods = [
   {
-    method: "Array.prototype.concat()",
-    description: `The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+    method: "Array.concat()",
+    usecase: "Join Two Arrays Together",
+    description: `The concat() method is used to join two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+    `,
+    illustration: `
+    var dayTimeMeals = ['breakfast', 'lunch'];
+    var nightTimeMeals = ['merienda', 'dinner'];
+
+    var allTheMeals = dayTimeMeals.concat(nightTimeMeals); 
+    ['breakfast', 'lunch', 'merienda', 'dinner']
     `,
   },
   {
