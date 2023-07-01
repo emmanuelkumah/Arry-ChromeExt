@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "LearnJS",
-  "description": "Learn JS on new tab",
+  "name": "Arrayna",
+  "description": "Learn JS Array methods whiles browsing. The extension helps JavaScript developers to master array methods. It provides a usecase for each randomly generated array method",
   "version": "1.0",
   "icons": {
     "48": "icons/48.png",
