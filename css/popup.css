@@ -5,11 +5,31 @@
 }
 
 .arry_container {
-  width: 200px;
-  height: 400px;
-  background-color: antiquewhite;
+  width: 350px;
+  height: 100px;
+  padding: 2rem 1rem;
 }
 .arry_caption {
   display: flex;
-  gap: 3rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+.arry_caption > h2 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+.logo_container {
+  display: grid;
+  place-items: center;
+}
+.arry_logo {
+  width: 300px;
+  height: 60%;
+}
+.arry_footer {
+  font-size: 1.2rem;
+  background-color: black;
+  padding: 0.5rem;
+  color: #fff;
 }

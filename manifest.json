@@ -1,15 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Arrayna",
-  "description": "Learn JS Array methods whiles browsing. The extension helps JavaScript developers to master array methods. It provides a usecase for each randomly generated array method",
-  "version": "1.0",
+  "name": "Arry",
+  "description": "Learn a random JS Array methods whenever you open a new tab",
+  "version": "1.0.1",
   "icons": {
     "48": "icons/48.png",
     "64": "icons/64.png"
   },
   "action": {
     "default_title": "Learn Arrays Easily",
-    "default_icon": "icons/64.png"
+    "default_icon": "icons/64.png",
+    "default_popup": "popup/popup.html"
   },
   "chrome_url_overrides": {
     "newtab": "index.html"
