@@ -1,4 +1,4 @@
-//array Methods
+
 const arrayMethods = [
   {
     method: "Array.concat()",
@@ -106,3 +106,5 @@ const arrayMethods = [
   </iframe>`,
   },
 ];
+
+export {arrayMethods}

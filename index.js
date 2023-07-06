@@ -1,9 +1,24 @@
-import { generateBackgroundColor, setColors } from "./src/helpers.js";
+import { generateBackgroundColor } from "./src/helpers.js";
+import { arrayMethods } from "./src/arrMethods.js";
 
-const bgColorsArr = setColors();
+const arrHeading = document.querySelector(".arrMethod");
+const arrDesc = document.querySelector(".arrDesc");
 
-generateBackgroundColor(bgColorsArr);
+generateBackgroundColor();
 
+const showArrCheatSheet = (arr) => {
+  const arrIndex = Math.floor(Math.random() * arr.length + 1);
+  arrHeading.textContent = arr[arrIndex].method;
+  arrDesc.textContent = arr[arrIndex].description;
+};
+
+showArrCheatSheet(arrayMethods);
+
+// const displayArrayMethod = () => {
+//   return (arrHeading.textContent = "Testing");
+// };
+
+// displayArrayMethod();
 //const heading = document.querySelector(".arrHeading");
 
 // const generateRandomBackgroundColor = () => {
