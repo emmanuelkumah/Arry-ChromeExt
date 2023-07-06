@@ -1,4 +1,8 @@
-# learnJS-WebExt
+# Project Details
 
-LearnJS chrome web extension enables JavaScript developers to swiftly learn JavaScript concept.
-Whenever you open a new tab, it display a JS array method with detailed explanation and illustration
+<div align="center">
+![Arry](./images/logo.png)
+
+Arry is a chrome extension that helps JavaScript developers to swiftly learn Array methods. :fire
+
+</div>
