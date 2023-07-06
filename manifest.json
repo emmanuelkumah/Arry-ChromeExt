@@ -8,6 +8,7 @@
     "64": "icons/64.png"
   },
   "action": {
+    "default_title": "Learn Arrays Easily",
     "default_icon": "icons/64.png"
   },
   "chrome_url_overrides": {

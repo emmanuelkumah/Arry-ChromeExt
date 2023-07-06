@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.arry_container {
+  width: 200px;
+  height: 400px;
+  background-color: antiquewhite;
+}
+.arry_caption {
+  display: flex;
+  gap: 3rem;
+}
