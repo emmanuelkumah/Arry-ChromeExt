@@ -1,4 +1,3 @@
-const heading = document.querySelector(".arrUseCase");
 const setColors = () => {
   return ["#000505", "#2E294E", "#091540", "#210124"];
 };

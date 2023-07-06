@@ -5,25 +5,29 @@
   color: #fff;
   font-family: "Poppins", sans-serif;
 }
+p {
+  font-size: 1.3rem;
+}
 #arr_container {
   display: grid;
   place-items: center;
   margin-top: 2%;
 }
+.arr_display {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.arrMethod,
+.arrUseCase,
+.arrDesc {
+  font-size: 1.3rem;
+}
+#arrMethod,
 .arrUseCase {
-  padding: 2rem;
-  font-size: 1.5rem;
   font-weight: 200;
 }
-.arrMethod {
-  font-size: 1.4rem;
-  font-weight: 300;
-  padding-bottom: 1rem;
-  
-}
 .arrDesc {
-  font-size: 1.2rem;
-  text-align: center;
   line-height: 1.5;
-  padding: 1.5rem 6rem;
+  padding: 1.5rem 4rem;
 }

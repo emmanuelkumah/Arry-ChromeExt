@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Arry",
-  "description": "Learn a random JS Array methods whenever you open a new tab",
+  "description": "Easily learn a JavaScript Array method whenever you open a new tab",
   "version": "1.0.1",
   "icons": {
     "48": "icons/48.png",
