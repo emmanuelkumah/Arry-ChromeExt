@@ -24,10 +24,10 @@ p {
   font-size: 1.3rem;
 }
 #arrMethod,
-.arrUseCase {
+.arrUseCase, .arrDesc {
   font-weight: 200;
 }
 .arrDesc {
   line-height: 1.5;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 10%;
 }
