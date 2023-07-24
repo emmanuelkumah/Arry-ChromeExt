@@ -11,11 +11,10 @@ generateBackgroundColor();
 const showArrCheatSheet = (arr) => {
   const randomNum = Math.floor(Math.random() * arr.length + 1);
 
-  arrHeading.textContent = arr[randomNum].method;
-  arrDesc.textContent = arr[randomNum].description;
-  arrUseCase.textContent = arr[randomNum].usecase;
-  arrIllustration.innerHTML = arr[randomNum].illustration;
+  arrHeading.textContent = arr[0].method;
+  arrDesc.innerHTML = arr[0].description;
+  arrUseCase.textContent = arr[0].usecase;
+  arrIllustration.innerHTML = arr[0].illustration;
 };
 
 showArrCheatSheet(arrayMethods);
-
