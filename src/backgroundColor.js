@@ -1,5 +1,5 @@
 const setColors = () => {
-  return ["#000505", "#2E294E", "#091540", "#210124"];
+  return ["#2E294E", "#091540", "#210124"];
 };
 
 const generateBackgroundColor = () => {
