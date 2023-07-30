@@ -190,6 +190,72 @@ const arrayMethods = [
 
  </p>`,
   },
+  {
+    method: "Array.indexOf()",
+    usecase: "Find the position of an element in an array",
+    description:
+      "The indexOf() method finds the position of an element in an array. It returns the index of the first occurrence of the element that you want to find, or -1 if the element is not found",
+    illustration: `<p>
+    
+    Egs. Find the position of  '🍏' in the array <br><br>
+
+   const fruits = ['🍓','🍉','🍏','🍓','🍋'] <br><br>
+   console.log(fruits.indexOf('🍏')) <br><br>
+
+   Output:  2        
+ </p>`,
+  },
+  {
+    method: "Array.findIndexOf()",
+    usecase:
+      "Returns the first index of the element in a given array that satisfies the provided test function",
+    description:
+      "The findIndex() executes a test function on every element in the array until it finds the one where test function returns a truthy value.Once the findIndex() finds such element, it returns the element's index. If no data is found then the value of -1 is returned",
+    illustration: `<p>
+    Egs. Return the index of the first element that satisfies the provided testing <br><br>
+
+    console.log(['🍉','🍏','🍓','🍋'].findIndex((fruit) => fruit === '🍋')) <br><br>
+
+   Output:  3
+          
+    </p>`,
+  },
+  {
+    method: "Array.forEach",
+    usecase: "Loops through any array",
+    description:
+      "The forEach() array method circles through any array, executing a provided function once for each array element in ascending index order",
+    illustration: `<p>
+    Egs. Circle through array elements
+
+    const arrFruits = ['🍉','🍏','🍓','🍋']
+    arrFruits.forEach((fruit) => console.log(fruit + 1))
+    
+    Output: 
+    "🍉1"
+    "🍏1"
+    "🍓1"
+    "🍋1"
+          
+    </p>`,
+  },
+  {
+    method: "Array.map",
+    usecase: "map() is used to transform an array into a new array with different values.",
+    description:
+      "The  map() method applies a function we provide to each element of an array and creates a new array with the results.",
+    illustration: `<p>
+    Egs. Modify array elements <br>
+
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
+    const transformedFruit = arrFruits.map((fruit) => "my "+fruit) <br><br>
+
+    console.log(transformedFruit)<br>
+    Output: ["my 🍉", "my 🍏", "my 🍓", "my 🍋"]
+
+          
+    </p>`,
+  },
 ];
 
 export { arrayMethods };
