@@ -241,7 +241,8 @@ const arrayMethods = [
   },
   {
     method: "Array.map",
-    usecase: "map() is used to transform an array into a new array with different values.",
+    usecase:
+      "map() is used to transform an array into a new array with different values.",
     description:
       "The  map() method applies a function we provide to each element of an array and creates a new array with the results.",
     illustration: `<p>
@@ -254,6 +255,72 @@ const arrayMethods = [
     Output: ["my 🍉", "my 🍏", "my 🍓", "my 🍋"]
 
           
+    </p>`,
+  },
+  {
+    method: "Array.every()",
+    usecase:
+      "Use the every() method to test whether all elements in an array pass the test provided by a test function",
+    description:
+      "The every() method considers all the elements of an array and checks whether all the elements of the array satisfy the given condition. It returns a Boolean value (true or false)",
+    illustration: `<p>
+    Egs. Check if every item is an '🍏'
+
+    const arrFruits = ['🍉','🍏','🍓','🍋']
+    const allApples = arrFruits.every((fruit) => fruit === '🍏')
+    
+    console.log(allApples)
+    
+    Output: false 
+    </p>`,
+  },
+  {
+    method: "Array.some()",
+    usecase:
+      "Use the some() method to test if at least one element in the array passes a test.",
+    description:
+      "The some() methods checks if at least a single array element passes the provided test function. If the test is passed, it returns true. Else, returns false.",
+    illustration: `<p>
+    Egs. Check if at least an item is an '🍏' <br><br>
+
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
+    const anyApple = arrFruits.some((fruit) => fruit === '🍏') <br><br>
+  
+    console.log(anyApple) <br><br>
+    
+    Output: true 
+    </p>`,
+  },
+  {
+    method: "Array.pop()",
+    usecase: "Remove the last element from an array",
+    description:
+      "The pop() method removes the last element from an array and returns that element. This method changes the length of the array",
+    illustration: `<p>
+    Egs. Remove the last item from the array <br><br>
+
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
+    const removeLast = arrFruits.pop() <br><br>
+    
+    console.log(removeLast) <br><br>
+
+    Output: "🍋"
+    </p>`,
+  },
+  {
+    method: "Array.push()",
+    usecase: "Add an element to the end of the array",
+    description:
+      "The push() method adds the specified elements to the end of an array and returns the new length of the array",
+    illustration: `<p>
+    Egs. Add element to the last item in the array <br><br>
+
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
+    const addElements = arrFruits.push('🍊') <br><br>
+    
+    console.log(addElements) <br><br>
+
+    Output: 5
     </p>`,
   },
 ];
