@@ -323,6 +323,96 @@ const arrayMethods = [
     Output: 5
     </p>`,
   },
+  {
+    method: "Array.shift()",
+    usecase: "Remove the first element from an array",
+    description:
+      "The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array.",
+    illustration: `<p>
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
+    const removedFruit = arrFruits.shift() <br><br>
+    console.log(removedFruit) <br><br>
+    Output: "🍉"
+    </p>`,
+  },
+  {
+    method: "Array.unshift()",
+    usecase:
+      "Add a new element to the beginning of an array and returns the new length",
+    description:
+      "The unshift() method adds the specified elements to the beginning of an array and returns the new length of the array.",
+    illustration: `<p>
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
+    const numberOfFruits = arrFruits.unshift('🍑',"🍒") <br><br>
+    console.log(numberOfFruits) <br><br>
+    Output: 6 <br><br>
+    
+    console.log(arrFruits) <br><br>
+
+    Output: ["🍑", "🍒", "🍉", "🍏", "🍓", "🍋"]
+    </p>`,
+  },
+  {
+    method: "Array.reduce()",
+    usecase: "Reduce the array to a single value",
+    description:
+      "The reduce() method executes a provided callback function on each element of the array, passing in the return value from the calculation on the next element till it finally produces a  single value.",
+    illustration: `<p>
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
+    const singleValue = arrFruits.reduce((accumulator, currentFruit) => accumulator + currentFruit, "🍒") <br><br>
+    
+    console.log(singleValue); <br><br>
+    Output: "🍒🍉🍏🍓🍋"
+    </p>`,
+  },
+  {
+    method: "Array.reverse()",
+    usecase:
+      "Reverse the elements array. The first element becomes the last, and the last element becomes the first",
+    description:
+      "The reverse() method reverses an array in place and returns the reference to the same array, the first array element now becoming the last, and the last array element becoming the first.",
+    illustration: `<p>
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
+    const reversedFruits = arrFruits.reverse()<br><br>
+    
+    console.log(reversedFruits);<br><br>
+
+    Output: ["🍋", "🍓", "🍏", "🍉"]
+    </p>`,
+  },
+  {
+    method: "Array.splice()",
+    usecase: "Add or remove element from an array",
+    description:
+      "The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.",
+    illustration: `<p>
+    Eg.1 Add element at index 1    
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
+    arrFruits.splice(1,0,'🍒') <br><br>
+    console.log(arrFruits) <br><br>
+    Ouput: ["🍉", "🍒", "🍏", "🍓", "🍋"]
+
+    Eg.2 Replace element at index 1 with a new element
+    const arrFruits = ['🍉','🍏','🍓','🍋']<br><br>
+    arrFruits.splice(1,1,'🍒')<br><br>
+    console.log(arrFruits)<br><br>
+    Output: ["🍉", "🍒", "🍓", "🍋"]
+
+
+    </p>`,
+  },
+  {
+    method: "Array.find()",
+    usecase: "Find the first element in an Array that meets a criteria",
+    description:
+      "The find() method returns the first element in the provided array that satisfies the provided testing function",
+    illustration: `<p>
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
+    const foundFruit =  arrFruits.find((fruit) => fruit === '🍏') <br><br>
+    console.log(foundFruit)<br><br>
+    Output: "🍏"
+    </p>`,
+  },
 ];
 
 export { arrayMethods };
