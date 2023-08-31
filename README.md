@@ -1,7 +1,6 @@
-# Project Details
+# Arry Chrome Extension
 
-<div align="center">
-![Arry](./images/arrLogo.png)
+![Arry](./images/arrLogo.jpg)
 
 Arry is a chrome extension that helps JavaScript developers to swiftly learn Array methods. :fire
 
@@ -12,5 +11,3 @@ It helps developers integrate mastering arrays into thier everyday browsing. Whe
 - Use case of each array
 - Illustration on how the array works using emojis
 - Detail description of the array method culled from MDN
-
-</div>
