@@ -22,11 +22,11 @@ const arrayMethods = [
     description:
       "The slice() method copies a portion of an array into a new array without modifying the original array. It can also be used to clone an array, and extract subset of array into a new array",
     illustration: `<p>
-   Eg.1: Clone an array <br><br>
+   Eg.1: Clone an array <br>
 
   const fruits= ['🍓','🍉','🍏','🍆','🍋'] <br>
   const newFruits = fruits.slice() <br>
-  console.log(newFruits) <br><br>
+  console.log(newFruits) <br>
 
   output: ['🍓','🍉','🍏','🍆','🍋'] 
   <br>
@@ -34,10 +34,9 @@ const arrayMethods = [
 
    Eg.2: Copy portion of an array into a new array starting from index 2 
    <br>
-   <br>
 
   const fruits= ['🍓','🍉','🍏','🍆','🍋'] <br>
-  const copiedFruits = fruits.slice(2) </br><br>
+  const copiedFruits = fruits.slice(2) </br>
  
   output: ['🍏','🍆','🍋']
  
@@ -49,13 +48,13 @@ const arrayMethods = [
     description:
       "The toString method will return a string representation of all the elements in the array",
     illustration: `<p
-     Egs.1: Converts an array to string <br><br>
+     Egs.1: Converts an array to string <br>
 
     const arrayFruits = ['🍓','🍉','🍏','🍆','🍋']<br>
     
     const arrayToString = arrayFruits.toString();<br>
     
-    console.log(arrayToString)<br><br>
+    console.log(arrayToString)<br>
     
     Output: "🍓,🍉,🍏,🍆,🍋"
     
@@ -69,15 +68,15 @@ const arrayMethods = [
     illustration: `<p>
     Egs.1: Converts an array to string
 
-    const arrayFruits = ['🍓','🍉','🍏','🍆','🍋']<br><br>
+    const arrayFruits = ['🍓','🍉','🍏','🍆','🍋']<br>
 
-    console.log(arrayFruits.join(""))<br><br>
+    console.log(arrayFruits.join(""))<br>
 
-    Output: "🍓🍉🍏🍆🍋" <br><br>
+    Output: "🍓🍉🍏🍆🍋" <br>
 
-    Egs.2: Join array elements by a dash(-)<br><br>
+    Egs.2: Join array elements by a dash(-)<br>
 
-    console.log(arrayFruits.join('-'))<br><br>
+    console.log(arrayFruits.join('-'))<br>
       
     Output: "🍓-🍉-🍏-🍆-🍋"
     </p>`,
@@ -90,7 +89,7 @@ const arrayMethods = [
       "Creates a new, shallow-copied array instance from an iterable or array-like object ",
     illustration: `<p>
 
-      console.log(Array.from('🍓🍉🍏🍆🍋')); <br><br>
+      console.log(Array.from('🍓🍉🍏🍆🍋')); <br>
 
       output: ['🍓','🍉','🍏','🍆','🍋']
     </p>`,
@@ -102,11 +101,11 @@ const arrayMethods = [
       "The isArray() method checks whether the passed argument is an array or not. It returns true if the the value is an array; otherwise false",
     illustration: `<p>
 
-      console.log(Array.isArray(['🍓','🍉','🍏','🍆','🍋']));<br><br>
+      console.log(Array.isArray(['🍓','🍉','🍏','🍆','🍋']));<br>
 
        Output: true
 
-      console.log(Array.isArray([]))<br><br>
+      console.log(Array.isArray([]))<br>
 
       Output: false
  
@@ -118,9 +117,9 @@ const arrayMethods = [
     description:
       "The Array.of() method always creates an array that contains the values that you pass to it regardless of the types or the number of arguments",
     illustration: `<p>
-       Egs. Creates a new array with provided elements <br><br>
+       Egs. Creates a new array with provided elements <br>
 
-        console.log(Array.of('🍓','🍉','🍏','🍆','🍋')); <br><br>
+        console.log(Array.of('🍓','🍉','🍏','🍆','🍋')); <br>
 
        output: ['🍓','🍉','🍏','🍆','🍋']
  
@@ -132,18 +131,14 @@ const arrayMethods = [
     description:
       "The copyWithin() method copies array elements from one position to another in the same array and returns it without modifying its length.",
     illustration: `<p>
-    Eg. Copy from index 1 all elements from 0 to the end <br><br>
-     const  array1 = ['🍓','🍉','🍏','🍆','🍋']<br><br
-
-      console.log(array1.copyWithin(1,0))<br><br>
-
-      output: ['🍓',🍓','🍉','🍏','🍆']<br><br>
+    Eg. Copy from index 1 all elements from 0 to the end <br>
+     const  array1 = ['🍓','🍉','🍏','🍆','🍋']<br>
+      console.log(array1.copyWithin(1,0))<br>
+      output: ['🍓',🍓','🍉','🍏','🍆']<br>
  
-    Eg. Copy from  index 0 all elements from index 1 to the end but not including 4 <br><br>
-
- 
-      const  array1 = ['🍓','🍉','🍏','🍆','🍋']<br><br> 
-      console.log(array1.copyWithin(0,1,4))<br><br>
+    Eg. Copy from  index 0 all elements from index 1 to the end but not including 4 <br>
+      const  array1 = ['🍓','🍉','🍏','🍆','🍋']<br>
+      console.log(array1.copyWithin(0,1,4))<br>
       output: ['🍉','🍏','🍆','🍆','🍋']
     </p>`,
   },
@@ -153,10 +148,10 @@ const arrayMethods = [
     description:
       "The filter() method returns a new array containing all the elements that passed a test that was defined in a given function.",
     illustration: `<p>
-    Eg. filter out element with fruit equals 🍓 <br><br>
-    const  arrayFruits = ['🍓','🍉','🍏','🍓','🍋']<br><br>
+    Eg. filter out element with fruit equals 🍓 <br>
+    const  arrayFruits = ['🍓','🍉','🍏','🍓','🍋']<br>
 
-    console.log(arrayFruits.filter((fruit) => fruit === '🍓'))<br><br>
+    console.log(arrayFruits.filter((fruit) => fruit === '🍓'))<br>
    
     
     Output: ['🍓','🍓']
@@ -171,17 +166,17 @@ const arrayMethods = [
     description:
       "The fill() method changes all the elements in an array with a specified value",
     illustration: `<p>
-    Eg. fill array with 🍋 from index 1 <br><br> 
-    const  arrayFruits = ['🍓','🍉','🍏','🍓','🍋']<br><br>
+    Eg. fill array with 🍋 from index 1 <br>
+    const  arrayFruits = ['🍓','🍉','🍏','🍓','🍋']<br>
 
-    console.log(arrayFruits.fill('🍋',1)<br><br>
+    console.log(arrayFruits.fill('🍋',1)<br>
 
-    Output: ['🍓','🍋','🍋','🍋','🍋']<br><br>
+    Output: ['🍓','🍋','🍋','🍋','🍋']<br>
                      
-   Eg.2 Fill with 🍋 from position 1 but not including 3<br><br>          
+   Eg.2 Fill with 🍋 from position 1 but not including 3<br>        
   const  arrayFruits = ['🍓','🍉','🍏','🍓','🍋']
 
-  console.log(arrayFruits.fill('🍋',1, 3) <br><br>
+  console.log(arrayFruits.fill('🍋',1, 3) <br>
 
    Outuput: ['🍓','🍋','🍋','🍓','🍋']
             
@@ -197,10 +192,10 @@ const arrayMethods = [
       "The indexOf() method finds the position of an element in an array. It returns the index of the first occurrence of the element that you want to find, or -1 if the element is not found",
     illustration: `<p>
     
-    Egs. Find the position of  '🍏' in the array <br><br>
+    Egs. Find the position of  '🍏' in the array <br>
 
-   const fruits = ['🍓','🍉','🍏','🍓','🍋'] <br><br>
-   console.log(fruits.indexOf('🍏')) <br><br>
+   const fruits = ['🍓','🍉','🍏','🍓','🍋'] <br>
+   console.log(fruits.indexOf('🍏')) <br>
 
    Output:  2        
  </p>`,
@@ -210,11 +205,11 @@ const arrayMethods = [
     usecase:
       "Returns the first index of the element in a given array that satisfies the provided test function",
     description:
-      "The findIndex() executes a test function on every element in the array until it finds the one where test function returns a truthy value.Once the findIndex() finds such element, it returns the element's index. If no data is found then the value of -1 is returned",
+      "The findIndex() runs a test function on every element in the array until it finds the one where test function returns a truthy value.Once the findIndex() finds such element, it returns the element's index. If no data is found then the value of -1 is returned",
     illustration: `<p>
-    Egs. Return the index of the first element that satisfies the provided testing <br><br>
+    Egs. Return the index of the first element that satisfies the provided testing <br>
 
-    console.log(['🍉','🍏','🍓','🍋'].findIndex((fruit) => fruit === '🍋')) <br><br>
+    console.log(['🍉','🍏','🍓','🍋'].findIndex((fruit) => fruit === '🍋')) <br>
 
    Output:  3
           
@@ -226,10 +221,10 @@ const arrayMethods = [
     description:
       "The forEach() array method circles through any array, executing a provided function once for each array element in ascending index order",
     illustration: `<p>
-    Egs. Circle through array elements
+    Egs. Circle through array elements <br>
 
-    const arrFruits = ['🍉','🍏','🍓','🍋']
-    arrFruits.forEach((fruit) => console.log(fruit + 1))
+    const arrFruits = ['🍉','🍏','🍓','🍋']<br>
+    arrFruits.forEach((fruit) => console.log(fruit + 1))<br>
     
     Output: 
     "🍉1"
@@ -248,8 +243,8 @@ const arrayMethods = [
     illustration: `<p>
     Egs. Modify array elements <br>
 
-    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
-    const transformedFruit = arrFruits.map((fruit) => "my "+fruit) <br><br>
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br>
+    const transformedFruit = arrFruits.map((fruit) => "my "+fruit) <br>
 
     console.log(transformedFruit)<br>
     Output: ["my 🍉", "my 🍏", "my 🍓", "my 🍋"]
@@ -264,12 +259,12 @@ const arrayMethods = [
     description:
       "The every() method considers all the elements of an array and checks whether all the elements of the array satisfy the given condition. It returns a Boolean value (true or false)",
     illustration: `<p>
-    Egs. Check if every item is an '🍏'
+    Egs. Check if every item is an '🍏' <br>
 
-    const arrFruits = ['🍉','🍏','🍓','🍋']
-    const allApples = arrFruits.every((fruit) => fruit === '🍏')
+    const arrFruits = ['🍉','🍏','🍓','🍋']<br>
+    const allApples = arrFruits.every((fruit) => fruit === '🍏')<br>
     
-    console.log(allApples)
+    console.log(allApples)<br>
     
     Output: false 
     </p>`,
@@ -281,12 +276,12 @@ const arrayMethods = [
     description:
       "The some() methods checks if at least a single array element passes the provided test function. If the test is passed, it returns true. Else, returns false.",
     illustration: `<p>
-    Egs. Check if at least an item is an '🍏' <br><br>
+    Egs. Check if at least an item is an '🍏' <br>
 
-    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
-    const anyApple = arrFruits.some((fruit) => fruit === '🍏') <br><br>
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br>
+    const anyApple = arrFruits.some((fruit) => fruit === '🍏') <br>
   
-    console.log(anyApple) <br><br>
+    console.log(anyApple) <br>
     
     Output: true 
     </p>`,
@@ -297,12 +292,12 @@ const arrayMethods = [
     description:
       "The pop() method removes the last element from an array and returns that element. This method changes the length of the array",
     illustration: `<p>
-    Egs. Remove the last item from the array <br><br>
+    Egs. Remove the last item from the array <br>
 
-    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
-    const removeLast = arrFruits.pop() <br><br>
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br>
+    const removeLast = arrFruits.pop() <br>
     
-    console.log(removeLast) <br><br>
+    console.log(removeLast) <br>
 
     Output: "🍋"
     </p>`,
@@ -313,12 +308,12 @@ const arrayMethods = [
     description:
       "The push() method adds the specified elements to the end of an array and returns the new length of the array",
     illustration: `<p>
-    Egs. Add element to the last item in the array <br><br>
+    Egs. Add element to the last item in the array <br>
 
-    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
-    const addElements = arrFruits.push('🍊') <br><br>
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br>
+    const addElements = arrFruits.push('🍊') <br>
     
-    console.log(addElements) <br><br>
+    console.log(addElements) <br>
 
     Output: 5
     </p>`,
@@ -329,9 +324,9 @@ const arrayMethods = [
     description:
       "The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array.",
     illustration: `<p>
-    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
-    const removedFruit = arrFruits.shift() <br><br>
-    console.log(removedFruit) <br><br>
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br>
+    const removedFruit = arrFruits.shift() <br>
+    console.log(removedFruit) <br>
     Output: "🍉"
     </p>`,
   },
@@ -342,12 +337,12 @@ const arrayMethods = [
     description:
       "The unshift() method adds the specified elements to the beginning of an array and returns the new length of the array.",
     illustration: `<p>
-    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
-    const numberOfFruits = arrFruits.unshift('🍑',"🍒") <br><br>
-    console.log(numberOfFruits) <br><br>
-    Output: 6 <br><br>
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br>
+    const numberOfFruits = arrFruits.unshift('🍑',"🍒") <br>
+    console.log(numberOfFruits) <br>
+    Output: 6 <br>
     
-    console.log(arrFruits) <br><br>
+    console.log(arrFruits) <br>
 
     Output: ["🍑", "🍒", "🍉", "🍏", "🍓", "🍋"]
     </p>`,
@@ -358,10 +353,10 @@ const arrayMethods = [
     description:
       "The reduce() method executes a provided callback function on each element of the array, passing in the return value from the calculation on the next element till it finally produces a  single value.",
     illustration: `<p>
-    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br>
     const singleValue = arrFruits.reduce((accumulator, currentFruit) => accumulator + currentFruit, "🍒") <br><br>
     
-    console.log(singleValue); <br><br>
+    console.log(singleValue); <br>
     Output: "🍒🍉🍏🍓🍋"
     </p>`,
   },
@@ -372,10 +367,10 @@ const arrayMethods = [
     description:
       "The reverse() method reverses an array in place and returns the reference to the same array, the first array element now becoming the last, and the last array element becoming the first.",
     illustration: `<p>
-    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
-    const reversedFruits = arrFruits.reverse()<br><br>
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br>
+    const reversedFruits = arrFruits.reverse()<br>
     
-    console.log(reversedFruits);<br><br>
+    console.log(reversedFruits);<br>
 
     Output: ["🍋", "🍓", "🍏", "🍉"]
     </p>`,
@@ -386,16 +381,16 @@ const arrayMethods = [
     description:
       "The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.",
     illustration: `<p>
-    Eg.1 Add element at index 1    
-    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
-    arrFruits.splice(1,0,'🍒') <br><br>
-    console.log(arrFruits) <br><br>
+    Eg.1 Add element at index 1 <br><br>    
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br>
+    arrFruits.splice(1,0,'🍒') <br>
+    console.log(arrFruits) <br>
     Ouput: ["🍉", "🍒", "🍏", "🍓", "🍋"]
 
-    Eg.2 Replace element at index 1 with a new element
-    const arrFruits = ['🍉','🍏','🍓','🍋']<br><br>
-    arrFruits.splice(1,1,'🍒')<br><br>
-    console.log(arrFruits)<br><br>
+    Eg.2 Replace element at index 1 with a new element <br><br>
+    const arrFruits = ['🍉','🍏','🍓','🍋']<br>
+    arrFruits.splice(1,1,'🍒')<br>
+    console.log(arrFruits)<br>
     Output: ["🍉", "🍒", "🍓", "🍋"]
 
 
@@ -407,9 +402,9 @@ const arrayMethods = [
     description:
       "The find() method returns the first element in the provided array that satisfies the provided testing function",
     illustration: `<p>
-    const arrFruits = ['🍉','🍏','🍓','🍋'] <br><br>
-    const foundFruit =  arrFruits.find((fruit) => fruit === '🍏') <br><br>
-    console.log(foundFruit)<br><br>
+    const arrFruits = ['🍉','🍏','🍓','🍋'] <br>
+    const foundFruit =  arrFruits.find((fruit) => fruit === '🍏') <br>
+    console.log(foundFruit)<br>
     Output: "🍏"
     </p>`,
   },

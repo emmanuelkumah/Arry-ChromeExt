@@ -12,7 +12,7 @@ const showArrCheatSheet = (arr) => {
   const randomNum = Math.floor(Math.random() * arr.length + 1);
 
   arrHeading.textContent = arr[randomNum].method;
-  arrDesc.innerHTML = arr[randomNum].description;
+  arrDesc.textContent = arr[randomNum].description;
   arrUseCase.textContent = arr[randomNum].usecase;
   arrIllustration.innerHTML = arr[randomNum].illustration;
 };
