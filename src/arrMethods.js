@@ -100,11 +100,9 @@ const arrayMethods = [
     description:
       "The isArray() method checks whether the passed argument is an array or not. It returns true if the the value is an array; otherwise false",
     illustration: `<p>
-
       console.log(Array.isArray(['🍓','🍉','🍏','🍆','🍋']));<br>
 
-       Output: true
-
+       Output: true <br>
       console.log(Array.isArray([]))<br>
 
       Output: false
@@ -174,11 +172,11 @@ const arrayMethods = [
     Output: ['🍓','🍋','🍋','🍋','🍋']<br>
                      
    Eg.2 Fill with 🍋 from position 1 but not including 3<br>        
-  const  arrayFruits = ['🍓','🍉','🍏','🍓','🍋']
+  const  arrayFruits = ['🍓','🍉','🍏','🍓','🍋']<br>
 
   console.log(arrayFruits.fill('🍋',1, 3) <br>
 
-   Outuput: ['🍓','🍋','🍋','🍓','🍋']
+   Output: ['🍓','🍋','🍋','🍓','🍋']
             
 
 
